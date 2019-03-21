@@ -5,7 +5,9 @@
   "main": "index.js",
   "scripts": {
     "start": "webpack-dev-server --open",
-    "webpack": "webpack"
+    "webpack": "webpack",
+    "server": "node ./server.js",
+    "start:dev": "concurrently --raw \"webpack-dev-server --open\" \"npm run server\""
   },
   "keywords": [],
   "author": "",
@@ -22,8 +24,15 @@
     "webpack-dev-server": "^3.2.1"
   },
   "dependencies": {
+    "amqplib": "^0.5.3",
+    "axios": "^0.18.0",
+    "body-parser": "^1.18.3",
+    "concurrently": "^4.1.0",
+    "express": "^4.16.4",
     "react": "^16.8.4",
     "react-dom": "^16.8.4",
+    "socket.io": "^2.2.0",
     "ts-loader": "^5.3.3"
-  }
+  },
+  "proxy": "http://localhost:5000"
 }
