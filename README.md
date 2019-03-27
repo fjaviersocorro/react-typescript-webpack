@@ -8,9 +8,9 @@
   <s><li>Add React</li>
   <li>Add Webpack</li>
   <li>Add Typescript</li>
-  <li>Add Express</li></s>
+  <li>Add Express</li>
   <li>Add CSS loaders</li>
-  <li>Add Img loaders</li>
+  <li>Add Img loaders</li></s>
   <li>Add hot-reload</li>
   <li>Create prod and dev builds</li>
 </ol>
